@@ -8,7 +8,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
     });
 
     // Ganti URL berikut dengan URL Web App Google Apps Script yang sudah dipublish
-    const scriptURL = "https://script.google.com/macros/s/AKfycbxZfzqwBKeqJx8FPNazr8aCALlrWJnx7o_qB800d1sT9eLDmmkYUoGS655o_mmDcJVXeg/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxxyoksrM3qOH3JugjJQeLyuaSEFs02EACJHYrSfPMfik_QD9VwJEvGnD2xpn0Kk4OZPQ/exec";
 
     fetch(scriptURL, {
         method: "POST",
