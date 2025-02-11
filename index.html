@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Ulang Eskul</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+</head>
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Data Ulang Eskul</h1>
+            </div>
+        </div>
+    </section>
+
+    <form id="form" class="container m-4 pl-4">
+        <!-- Nama Lengkap -->
+        <div class="field">
+            <label class="label">Nama Lengkap</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Nama Lengkap Anda" name="Nama Lengkap" required />
+            </div>
+        </div>
+
+        <!-- Jenis Kelamin -->
+        <div class="field">
+            <label class="label">Jenis Kelamin</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="JK" value="L" required /> Laki-laki
+                </label>
+                <label class="radio">
+                    <input type="radio" name="JK" value="P" required /> Perempuan
+                </label>
+            </div>
+        </div>
+
+        <!-- Kelas -->
+        <div class="field">
+            <label class="label">Kelas</label>
+            <div class="control">
+                <div class="select is-fullwidth">
+                    <select name="Kelas" required>
+                        <option value="" disabled selected>Pilih Kelas</option>
+                        <option value="X A">X A</option>
+                        <option value="X B">X B</option>
+                        <option value="X C">X C</option>
+                        <option value="X D">X D</option>
+                        <option value="X E">X E</option>
+                        <option value="X F">X F</option>
+                        <option value="X G">X G</option>
+                        <option value="X H">X H</option>
+                        <option value="X I">X I</option>
+                        <option value="X J">X J</option>
+                        <option value="XI A1">XI A1</option>
+                        <option value="XI A2">XI A2</option>
+                        <option value="XI A3">XI A3</option>
+                        <option value="XI B1">XI B1</option>
+                        <option value="XI B2">XI B2</option>
+                        <option value="XI C1">XI C1</option>
+                        <option value="XI C2">XI C2</option>
+                        <option value="XI C3">XI C3</option>
+                        <option value="XI C4">XI C4</option>
+                        <option value="XI D">XI D</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tombol Submit & Reset -->
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-primary" type="submit">Kirim</button>
+            </div>
+            <div class="control">
+                <button class="button is-danger" type="reset">Batalkan</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Pesan Notifikasi -->
+    <div id="message" class="notification is-hidden"></div>
+
+    <!-- Link ke JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
